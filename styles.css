@@ -1,0 +1,59 @@
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.um{
+    width: 10vh;
+    height: 10vh;
+    background-image: radial-gradient(rgb(119, 0, 255), #9005ec9a);
+    border-radius: 2px;
+    border: 2px solid #f2f2f2;
+    animation-name: e1;
+    animation-name: rota2;
+    animation-duration: 1s;
+    animation-iteration-count: 9999;
+}
+
+.dois{
+    width: 10vh;
+    height: 10vh;
+    background-image: radial-gradient(rgba(183, 109, 243, 0.562), rgba(159, 66, 235, 0.322));
+    border-radius: 2px;
+    border: 2px solid #7209eb;
+    animation-name: e2;
+    animation-name: rota3;
+    animation-duration: 2s;
+    animation-iteration-count: 9999;
+}
+
+@keyframes e1 {
+    from  {background-image: radial-gradient(rgb(119, 0, 255), #9005ec6c);}
+    to {background-image: radial-gradient(rgba(234, 0, 255, 0.644), #9705ec73);}
+    from  {background-image: radial-gradient(rgb(119, 0, 255), #9005ec60);}
+    to  {background-image: radial-gradient(rgba(234, 0, 255, 0.61), #9705ec62);}
+
+  }
+
+
+  @keyframes e2 {
+    from  {background-image: radial-gradient(rgba(183, 109, 243, 0.562), rgba(159, 66, 235, 0.322));        ;}
+    to    {background-image: radial-gradient(rgba(183, 109, 243, 0.692), rgba(128, 32, 238, 0.582)); 
+
+  }
+  }
+
+
+  @keyframes rota2 {
+	from{ transform:rotate(-45deg);}
+	to { transform: rotate(-225deg);}
+}
+
+@keyframes rota3 {
+	from{ transform:rotate(-225deg);}
+	to { transform: rotate(-45deg);}
+}
